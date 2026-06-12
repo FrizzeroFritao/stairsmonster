@@ -1,0 +1,278 @@
+/* CONFIGURAÇÕES GERAIS */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background-color:#070a1a;
+color:#eaeaea;
+}
+
+/* ESTRELAS DE FUNDO */
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background-image:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(#9bbcff 1px, transparent 1px);
+background-size:90px 90px,140px 140px;
+opacity:.12;
+pointer-events:none;
+z-index:-1;
+}
+
+/* MENU */
+.menu{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background-color:rgba(10,12,30,.95);
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+backdrop-filter:blur(8px);
+}
+
+.logo{
+color:#9bbcff;
+font-size:24px;
+font-weight:bold;
+}
+
+.links a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.links a:hover{
+color:#9bbcff;
+}
+
+/* BANNER */
+.banner{
+min-height:100vh;
+background:linear-gradient(rgba(0,0,0,.7),rgba(7,10,26,.8)),
+url("https://upload.wikimedia.org/wikipedia/commons/0/0c/Pleiades_large.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 20px;
+}
+
+.banner h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.banner p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#5b7cff;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#9bbcff;
+color:#0a0f2c;
+}
+
+section{
+padding:80px 40px;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+color:#9bbcff;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+width:280px;
+background:rgba(255,255,255,.05);
+border-radius:18px;
+overflow:hidden;
+text-align:center;
+border:1px solid rgba(155,188,255,.1);
+}
+
+.card img{
+width:100%;
+height:190px;
+object-fit:cover;
+}
+
+.card h3{
+margin:20px 0 10px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 0 15px rgba(91,124,255,.3),
+0 0 30px rgba(91,124,255,.2);
+}
+
+/* PROMOÇÕES */
+.promocoes{
+background:#0a0f2c;
+text-align:center;
+}
+
+.promo-box{
+max-width:550px;
+margin:auto;
+padding:40px;
+border-radius:20px;
+background:linear-gradient(135deg,#1a2450,#0a0f2c);
+}
+
+/* SOBRE */
+.sobre{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.sobre p{
+line-height:1.7;
+margin-bottom:20px;
+}
+
+/* DEPOIMENTOS */
+.avaliacoes{
+background:#0a0f2c;
+}
+
+.depoimentos{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.depoimento{
+width:260px;
+padding:25px;
+border-radius:18px;
+background:rgba(255,255,255,.05);
+}
+
+/* CONTATO */
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+border-radius:10px;
+border:1px solid rgba(155,188,255,.2);
+background:rgba(255,255,255,.05);
+color:white;
+}
+
+button{
+padding:15px;
+border:none;
+border-radius:30px;
+background:#5b7cff;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* RODAPÉ */
+footer{
+background:#050713;
+padding:35px 20px;
+text-align:center;
+}
+
+footer h3{
+color:#9bbcff;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+right:25px;
+bottom:25px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25D366;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+text-decoration:none;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:768px){
+
+.menu{
+padding:15px;
+flex-direction:column;
+gap:10px;
+}
+
+.links{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.links a{
+margin:5px;
+}
+
+.banner h1{
+font-size:38px;
+}
+
+section{
+padding:60px 20px;
+}
+
+}
