@@ -186,4 +186,27 @@ max-width:800px;
 margin-top:20px;
 color:#9bbcff;
 }
+body{background:#070a1a;color:#eaeaea;font-family:Arial,sans-serif}
+.menu{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:15px 40px;background:rgba(10,12,30,.95)}
+.banner{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.banner h1{font-size:64px;text-shadow:0 0 20px rgba(155,188,255,.4)}
+.btn{background:#5b7cff;padding:15px 30px;border-radius:30px;color:white;text-decoration:none}
+section{padding:80px 40px}
+.cards{display:flex;gap:25px;flex-wrap:wrap;justify-content:center}
+.card,.depoimento,.timeline-item,.mapa,.promo-box{
+background:rgba(255,255,255,.05);
+padding:25px;border-radius:18px;
+transition:.4s
+}
+.card:hover,.depoimento:hover,.timeline-item:hover{
+transform:translateY(-6px);
+box-shadow:0 0 20px rgba(91,124,255,.25)
+}
+.timeline{max-width:1000px;margin:auto}
+.timeline-item{margin:20px 0;border-left:4px solid #9bbcff}
+.timeline-item span{color:#9bbcff;font-weight:bold;font-size:22px}
+.tabela-estrelas{width:100%;max-width:1000px;margin:auto;border-collapse:collapse}
+.tabela-estrelas th{background:#16204b;padding:15px}
+.tabela-estrelas td{padding:15px;border:1px solid rgba(255,255,255,.08)}
+.mapa iframe{width:100%;height:400px;border:0;border-radius:15px}
 
