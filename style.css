@@ -289,3 +289,16 @@ padding:60px 20px;
     box-shadow: 0 0 20px rgba(91, 124, 255, 0.3);
 }
 }
+.localizacao{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.localizacao h2{
+    margin-bottom:15px;
+}
+
+.localizacao p{
+    margin-bottom:30px;
+    opacity:0.8;
+}
