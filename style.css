@@ -16,7 +16,7 @@ background:rgba(10,12,30,.95);
 min-height:100vh;
 background:
 linear-gradient(rgba(0,0,0,.7),rgba(7,10,26,.8)),
-url("Pleiades.jpg");
+url("img/Pleiades.jpg");
 background-size:cover;
 background-position:center;
 display:flex;
